@@ -1,0 +1,4 @@
+suites:
+    calculator_suite:
+        namespace: Calculator
+        psr0_prefix: Calculator
