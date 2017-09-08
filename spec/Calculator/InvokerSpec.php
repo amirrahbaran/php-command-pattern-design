@@ -15,6 +15,6 @@ class InvokerSpec extends ObjectBehavior
 
     function it_should_return_addition_command()
     {
-        $this->getCommand(1)->shouldHaveType(AdditionOperator::class);
+        $this->getCommand()->shouldReturn(null);
     }
 }

@@ -4,12 +4,8 @@ namespace Calculator;
 
 class Invoker
 {
-    
-
-    public function getCommand($argument1)
-    {
-        // TODO: write logic here
+    public function getCommand()
+    {   
+        return null;
     }
-
-
 }

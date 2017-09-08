@@ -6,6 +6,6 @@ class Client
 {
     public function setReceiver()
     {
-        // TODO: write logic here
+        return 0;
     }
 }

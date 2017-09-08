@@ -2,6 +2,7 @@
 
 namespace LightRemoteControl;
 
-class Command
+interface Command
 {
+    public function execute();
 }

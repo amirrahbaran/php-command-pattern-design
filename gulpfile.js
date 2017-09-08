@@ -7,7 +7,7 @@ var notify = require('gulp-notify');
 
 gulp.task('test', function() {
     gulp.src('phpspec.yml')
-        .pipe(phpspec('phpspec run', { 'verbose': 'v', notify: true }))
+        .pipe(phpspec('./bin/phpspec run', { 'verbose': 'v', notify: true }))
         .on('error', notify.onError({
             title: "Crap",
             message: "Your tests failed!",

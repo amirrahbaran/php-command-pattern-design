@@ -16,6 +16,6 @@ class ClientSpec extends ObjectBehavior
     function it_should_set_receiver()
     {
         $anAddCommand = new \Calculator\AdditionOperator;
-        $this->setReceiver()->shouldReturn();
+        $this->setReceiver()->shouldReturn(0);
     }
 }
