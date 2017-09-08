@@ -2,3 +2,6 @@ suites:
     calculator_suite:
         namespace: Calculator
         psr0_prefix: Calculator
+    light_suit:
+        namespace: LightRemoteControl
+        psr0_prefix: LightRemoteControl

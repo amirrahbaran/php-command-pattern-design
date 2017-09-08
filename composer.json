@@ -1,6 +1,5 @@
 {
     "require-dev": {
-        "codeception/codeception": "^2.3",
         "phpspec/phpspec": "^4.0"
     },
     "autoload": {
