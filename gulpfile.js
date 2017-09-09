@@ -4,18 +4,19 @@ var run = require('gulp-run');
 var plumber = require('gulp-plumber');
 var notify = require('gulp-notify');
 
-
+console.log(__dirname);
 gulp.task('test', function() {
     gulp.src('phpspec.yml')
         .pipe(phpspec('./bin/phpspec run', { 'verbose': 'v', notify: true }))
         .on('error', notify.onError({
-            title: "Crap",
+            title: "All test failed",
             message: "Your tests failed!",
-            icon: __dirname + '/fail.png'
+            icon: __dirname + '/failed.png'
         }))
         .pipe(notify({
-            title: "Success",
-            message: "All tests have returned green!"
+            title: "All test passed",
+            message: "All tests have returned green!",
+            icon: __dirname + '/passed.png'
         }));
 });
 
